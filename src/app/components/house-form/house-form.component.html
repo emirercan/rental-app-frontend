@@ -1,0 +1,24 @@
+<div class="container">
+    <form [formGroup]="houseForm" (ngSubmit)="submitForm(houseForm.value)" class="row g-3">
+      <div class="col-12">
+        <label for="title" class="form-label">Başlık</label>
+        <input type="text" class="form-control" id="title" formControlName="title" required>
+      </div>
+      <div class="col-12">
+        <label for="description" class="form-label">Açıklama</label>
+        <textarea class="form-control" id="description" formControlName="description" required></textarea>
+      </div>
+      <div class="col-12">
+        <label for="price" class="form-label">Fiyat</label>
+        <input type="number" class="form-control" id="price" formControlName="price" required>
+      </div>
+      <div class="col-12">
+        <label for="location" class="form-label">Konum</label>
+        <input type="text" class="form-control" id="location" formControlName="location" required>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">İlan Oluştur</button>
+      </div>
+    </form>
+  </div>
+  
